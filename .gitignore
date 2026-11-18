@@ -1,0 +1,8 @@
+# 1. 数据不进库
+data/
+!data/.gitkeep
+*.csv *.log *.tmp
+# 2. 密钥不进库
+.env *.pem
+# 3. 产物不进库
+__pycache__/
