@@ -20,3 +20,4 @@ DATA_FILE="data/raw/access_${BIZ_DATE}.log"
 LIMIT_ENABLED="true"
 echo "DEBUG:测试"
 LIMIT_VAL="100"
+#新增:检查上游数据是否就绪
