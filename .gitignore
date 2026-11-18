@@ -1,0 +1,13 @@
+data/*
+!data/.gitkeep
+*.csv
+*.parquet
+*.log
+*.tmp
+*_SUCCESS
+.env
+*.pem
+*.key
+__pycache__/
+.venv/
+spark-warehouse/
