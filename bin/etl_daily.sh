@@ -21,3 +21,4 @@ LIMIT_ENABLED="true"
 echo "DEBUG:测试"
 LIMIT_VAL="100"
 #新增:检查上游数据是否就绪
+修复:如果文件不存在，直接跳过以防死锁
