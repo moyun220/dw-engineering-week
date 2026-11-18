@@ -16,11 +16,7 @@ log INFO "任务开始执行..."
 sleep 20 
 
 DATA_FILE="data/raw/access_${BIZ_DATE}.log"
-
-# 关键坑：如果你用的是相对路径，而 crontab 没有 cd，这里就会报错找不到文件
-if [[ ! -f "$DATA_FILE" ]]; then
-    log ERROR "数据文件 $DATA_FILE 不存在！任务终止。"
-    exit 3
-fi
-
-log INFO "数据校验通过，处理完毕！"
+# --- 下面是我新加的代码 --
+LIMIT_ENABLED="true"
+echo "DEBUG:测试"
+LIMIT_VAL="100"
